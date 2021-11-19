@@ -20,7 +20,7 @@ limitations under the License.
 
 # iterPop
 
-[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] [![dependencies][dependencies-image]][dependencies-url]
+[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
 > Create an [iterator][mdn-iterator-protocol] which skips the last value of a provided [iterator][mdn-iterator-protocol].
 
@@ -212,9 +212,9 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/iter/push`][@stdlib/iter/push]: create an iterator which appends additional values to the end of a provided iterator.
--   [`@stdlib/iter/shift`][@stdlib/iter/shift]: create an iterator which skips the first value of a provided iterator.
--   [`@stdlib/iter/slice`][@stdlib/iter/slice]: create an iterator which returns a subsequence of iterated values from a provided iterator.
+-   <span class="package-name">[`@stdlib/iter/push`][@stdlib/iter/push]</span><span class="delimiter">: </span><span class="description">create an iterator which appends additional values to the end of a provided iterator.</span>
+-   <span class="package-name">[`@stdlib/iter/shift`][@stdlib/iter/shift]</span><span class="delimiter">: </span><span class="description">create an iterator which skips the first value of a provided iterator.</span>
+-   <span class="package-name">[`@stdlib/iter/slice`][@stdlib/iter/slice]</span><span class="delimiter">: </span><span class="description">create an iterator which returns a subsequence of iterated values from a provided iterator.</span>
 
 </section>
 
@@ -265,8 +265,12 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/iter-pop/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/iter-pop?branch=main
 
+<!--
+
 [dependencies-image]: https://img.shields.io/david/stdlib-js/iter-pop.svg
 [dependencies-url]: https://david-dm.org/stdlib-js/iter-pop/main
+
+-->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
 [chat-url]: https://gitter.im/stdlib-js/stdlib/
