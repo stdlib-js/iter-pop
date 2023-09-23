@@ -18,6 +18,17 @@ limitations under the License.
 
 -->
 
+
+<details>
+  <summary>
+    About stdlib...
+  </summary>
+  <p>We believe in a future in which the web is a preferred environment for numerical computation. To help realize this future, we've built stdlib. stdlib is a standard library, with an emphasis on numerical and scientific computation, written in JavaScript (and C) for execution in browsers and in Node.js.</p>
+  <p>The library is fully decomposable, being architected in such a way that you can swap out and mix and match APIs and functionality to cater to your exact preferences and use cases.</p>
+  <p>When you use stdlib, you can be absolutely certain that you are using the most thorough, rigorous, well-written, studied, documented, tested, measured, and high-quality code out there.</p>
+  <p>To join us in bringing numerical computing to the web, get started by checking us out on <a href="https://github.com/stdlib-js/stdlib">GitHub</a>, and please consider <a href="https://opencollective.com/stdlib">financially supporting stdlib</a>. We greatly appreciate your continued support!</p>
+</details>
+
 # iterPop
 
 [![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
@@ -34,14 +45,30 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/iter-pop
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import iterPop from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-pop@deno/mod.js';
+var iterPop = require( '@stdlib/iter-pop' );
 ```
 
 #### iterPop( iterator\[, clbk\[, thisArg]] )
@@ -49,7 +76,7 @@ import iterPop from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-pop@deno/mod.js'
 Returns an [iterator][mdn-iterator-protocol] which skips the last value of a provided [`iterator`][mdn-iterator-protocol].
 
 ```javascript
-import array2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-iterator@deno/mod.js';
+var array2iterator = require( '@stdlib/array-to-iterator' );
 
 var it = iterPop( array2iterator( [ 1, 2, 3, 4 ] ) );
 // returns <Object>
@@ -75,7 +102,7 @@ The returned [iterator][mdn-iterator-protocol] protocol-compliant object has the
 To invoke a callback upon skipping the last value of a provided [`iterator`][mdn-iterator-protocol], provide a `clbk` argument.
 
 ```javascript
-import array2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-iterator@deno/mod.js';
+var array2iterator = require( '@stdlib/array-to-iterator' );
 
 function onPop( v ) {
     console.log( v );
@@ -107,7 +134,7 @@ To set the callback execution context, provide a `thisArg`.
 <!-- eslint-disable no-invalid-this -->
 
 ```javascript
-import array2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-iterator@deno/mod.js';
+var array2iterator = require( '@stdlib/array-to-iterator' );
 
 function onPop() {
     this.count += 1;
@@ -161,8 +188,8 @@ bool = ( ctx.count === 1 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-randu@deno/mod.js';
-import iterPop from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-pop@deno/mod.js';
+var randu = require( '@stdlib/random-iter-randu' );
+var iterPop = require( '@stdlib/iter-pop' );
 
 // Create a seeded iterator for generating pseudorandom numbers:
 var rand = randu({
@@ -221,7 +248,7 @@ while ( true ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -251,8 +278,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/iter-pop.svg
 [npm-url]: https://npmjs.org/package/@stdlib/iter-pop
 
-[test-image]: https://github.com/stdlib-js/iter-pop/actions/workflows/test.yml/badge.svg?branch=main
-[test-url]: https://github.com/stdlib-js/iter-pop/actions/workflows/test.yml?query=branch:main
+[test-image]: https://github.com/stdlib-js/iter-pop/actions/workflows/test.yml/badge.svg?branch=v0.1.0
+[test-url]: https://github.com/stdlib-js/iter-pop/actions/workflows/test.yml?query=branch:v0.1.0
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/iter-pop/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/iter-pop?branch=main
@@ -285,11 +312,11 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/iter/push]: https://github.com/stdlib-js/iter-push/tree/deno
+[@stdlib/iter/push]: https://github.com/stdlib-js/iter-push
 
-[@stdlib/iter/shift]: https://github.com/stdlib-js/iter-shift/tree/deno
+[@stdlib/iter/shift]: https://github.com/stdlib-js/iter-shift
 
-[@stdlib/iter/slice]: https://github.com/stdlib-js/iter-slice/tree/deno
+[@stdlib/iter/slice]: https://github.com/stdlib-js/iter-slice
 
 <!-- </related-links> -->
 
