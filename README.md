@@ -45,19 +45,32 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/iter-pop
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import iterPop from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-pop@esm/index.mjs';
-```
-The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/iter-pop/tags). For example,
-
-```javascript
-import iterPop from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-pop@v0.2.0-esm/index.mjs';
+var iterPop = require( '@stdlib/iter-pop' );
 ```
 
 #### iterPop( iterator\[, clbk\[, thisArg]] )
@@ -65,7 +78,7 @@ import iterPop from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-pop@v0.2.0-esm/i
 Returns an [iterator][mdn-iterator-protocol] which skips the last value of a provided [`iterator`][mdn-iterator-protocol].
 
 ```javascript
-import array2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-iterator@esm/index.mjs';
+var array2iterator = require( '@stdlib/array-to-iterator' );
 
 var it = iterPop( array2iterator( [ 1, 2, 3, 4 ] ) );
 // returns <Object>
@@ -91,7 +104,7 @@ The returned [iterator][mdn-iterator-protocol] protocol-compliant object has the
 To invoke a callback upon skipping the last value of a provided [`iterator`][mdn-iterator-protocol], provide a `clbk` argument.
 
 ```javascript
-import array2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-iterator@esm/index.mjs';
+var array2iterator = require( '@stdlib/array-to-iterator' );
 
 function onPop( v ) {
     console.log( v );
@@ -123,7 +136,7 @@ To set the callback execution context, provide a `thisArg`.
 <!-- eslint-disable no-invalid-this -->
 
 ```javascript
-import array2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-iterator@esm/index.mjs';
+var array2iterator = require( '@stdlib/array-to-iterator' );
 
 function onPop() {
     this.count += 1;
@@ -176,14 +189,9 @@ bool = ( ctx.count === 1 );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-randu@esm/index.mjs';
-import iterPop from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-pop@esm/index.mjs';
+```javascript
+var randu = require( '@stdlib/random-iter-randu' );
+var iterPop = require( '@stdlib/iter-pop' );
 
 // Create a seeded iterator for generating pseudorandom numbers:
 var rand = randu({
@@ -203,10 +211,6 @@ while ( true ) {
     }
     console.log( v.value );
 }
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -246,7 +250,7 @@ while ( true ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -276,8 +280,8 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/iter-pop.svg
 [npm-url]: https://npmjs.org/package/@stdlib/iter-pop
 
-[test-image]: https://github.com/stdlib-js/iter-pop/actions/workflows/test.yml/badge.svg?branch=v0.2.0
-[test-url]: https://github.com/stdlib-js/iter-pop/actions/workflows/test.yml?query=branch:v0.2.0
+[test-image]: https://github.com/stdlib-js/iter-pop/actions/workflows/test.yml/badge.svg?branch=v0.2.1
+[test-url]: https://github.com/stdlib-js/iter-pop/actions/workflows/test.yml?query=branch:v0.2.1
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/iter-pop/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/iter-pop?branch=main
@@ -313,11 +317,11 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/iter/push]: https://github.com/stdlib-js/iter-push/tree/esm
+[@stdlib/iter/push]: https://github.com/stdlib-js/iter-push
 
-[@stdlib/iter/shift]: https://github.com/stdlib-js/iter-shift/tree/esm
+[@stdlib/iter/shift]: https://github.com/stdlib-js/iter-shift
 
-[@stdlib/iter/slice]: https://github.com/stdlib-js/iter-slice/tree/esm
+[@stdlib/iter/slice]: https://github.com/stdlib-js/iter-slice
 
 <!-- </related-links> -->
 
