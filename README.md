@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import iterPop from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-pop@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/iter-pop/tags). For example,
+
+```javascript
 import iterPop from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-pop@v0.2.2-esm/index.mjs';
 ```
 
@@ -178,7 +183,7 @@ bool = ( ctx.count === 1 );
 <script type="module">
 
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-randu@esm/index.mjs';
-import iterPop from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-pop@v0.2.2-esm/index.mjs';
+import iterPop from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-pop@esm/index.mjs';
 
 // Create a seeded iterator for generating pseudorandom numbers:
 var rand = randu({
