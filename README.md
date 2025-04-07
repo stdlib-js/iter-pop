@@ -129,7 +129,7 @@ var bool = it.next().done;
 
 The callback function is provided a single argument:
 
--   **v**: the skipped value
+-   **v**: the skipped value.
 
 To set the callback execution context, provide a `thisArg`.
 
@@ -267,7 +267,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
