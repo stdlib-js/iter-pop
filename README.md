@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import iterPop from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-pop@esm/index.mjs';
+import iterPop from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-pop@v0.2.3-esm/index.mjs';
 ```
 
 #### iterPop( iterator\[, clbk\[, thisArg]] )
@@ -178,7 +178,7 @@ bool = ( ctx.count === 1 );
 <script type="module">
 
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-randu@esm/index.mjs';
-import iterPop from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-pop@esm/index.mjs';
+import iterPop from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-pop@v0.2.3-esm/index.mjs';
 
 // Create a seeded iterator for generating pseudorandom numbers:
 var rand = randu({
