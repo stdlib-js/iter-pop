@@ -1,0 +1,5 @@
+"use strict";var w=function(e,r){return function(){try{return r||e((r={exports:{}}).exports,r),r.exports}catch(u){throw (r=0, u)}};};var q=w(function(L,g){
+var l=require('@stdlib/utils-define-nonenumerable-read-only-property/dist'),m=require('@stdlib/assert-is-function/dist'),b=require('@stdlib/assert-is-iterator-like/dist'),s=require('@stdlib/symbol-iterator/dist'),h=require('@stdlib/utils-noop/dist'),d=require('@stdlib/error-tools-fmtprodmsg/dist');function p(e,r,u){var a,n,i,o,f;if(!b(e))throw new TypeError(d('0Pb46',e));if(arguments.length>1){if(!m(r))throw new TypeError(d('0Pb2H',r));o=r}else o=h;return f=0,n={},l(n,"next",c),l(n,"return",x),s&&m(e[s])&&l(n,s,y),n;function c(){var v,t;return i?{done:!0}:(t=e.next(),f===0?(f+=1,t.done?(i=!0,t):(a=t.value,c())):t.done?(i=!0,o.call(u,a),t):(v={value:a,done:!1},a=t.value,v))}function x(v){return i=!0,arguments.length?{value:v,done:!0}:{done:!0}}function y(){return p(e[s](),o,u)}}g.exports=p
+});var F=q();module.exports=F;
+/** @license Apache-2.0 */
+//# sourceMappingURL=index.js.map
